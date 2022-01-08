@@ -1,7 +1,7 @@
 package util
 
 fun getResourceAsText(path: String): String {
-    return object {}.javaClass.getResource(path).readText()
+    return object {}.javaClass.getResource(path)!!.readText()
 }
 
 fun getUrlByYearAndDays(day: Int, year: Int): String {
